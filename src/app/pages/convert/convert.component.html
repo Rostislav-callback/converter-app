@@ -1,0 +1,30 @@
+<div class="convert-container">
+  <div class="convert-block">
+    <form class="convert-form" [formGroup]="convertFromForm">
+      <mat-form-field>
+        <input #inputFrom matInput formControlName="currencyFromCount">
+      </mat-form-field>
+      <mat-form-field class="currency-select">
+        <mat-select formControlName="currencyFromName" (selectionChange)="changeCurrencyNameFrom($event)">
+          <mat-option value="840">USD</mat-option>
+          <mat-option value="978">EUR</mat-option>
+          <mat-option value="980">UAH</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+    <form class="convert-form" [formGroup]="convertToForm">
+      <mat-form-field>
+        <input #inputTo matInput formControlName="currencyToCount">
+      </mat-form-field>
+      <mat-form-field class="currency-select">
+        <mat-select formControlName="currencyToName" (selectionChange)="changeCurrencyNameTo($event)">
+          <mat-option value="840">USD</mat-option>
+          <mat-option value="978">EUR</mat-option>
+          <mat-option value="980">UAH</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+</div>
+
+<ng-container *ngIf="currencyDataSubject$ | async"></ng-container>
