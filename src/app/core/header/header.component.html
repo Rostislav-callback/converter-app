@@ -1,0 +1,8 @@
+<mat-toolbar>
+    <div class="curransy-block">
+        <span>USD = {{usdToUAH}}UAH</span>
+        <span>EUR = {{eurToUAH}}UAH</span>
+    </div>
+</mat-toolbar>
+
+<ng-container *ngIf="currencyData$ | async"></ng-container>

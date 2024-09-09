@@ -1,0 +1,25 @@
+.convert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    background: rgb(238,174,202);
+    background: linear-gradient(135deg, rgba(238,174,202,1) 30%, rgba(148,187,233,1) 85%);
+}
+
+.convert-block {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 70px;
+}
+
+.convert-form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    .currency-select {
+        width: 100px;
+    }
+}
