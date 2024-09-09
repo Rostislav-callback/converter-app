@@ -1,3 +1,3 @@
-export const curencyUSD = 'USD';
-export const currencyEUR = 'EUR';
-export const currencyUAH = 'UAH';
+export const curencyCodeUSD = 840;
+export const currencyCodeEUR = 978;
+export const currencyCodeUAH = 980;
